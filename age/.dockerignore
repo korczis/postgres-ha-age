@@ -1,0 +1,78 @@
+# flyctl launch added from .gitignore
+**/*.o
+**/*.so
+**/.gitignore
+**/build.sh
+**/.idea
+**/.deps
+
+# flyctl launch added from doc/.gitignore
+doc/_build
+
+# flyctl launch added from drivers/jdbc/.gitignore
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+
+# Ignore Gradle Wapper
+drivers/jdbc/**/gradle/wrapper/gradle-wrapper.jar
+
+# Ignore Gradle project-specific cache directory
+drivers/jdbc/**/.gradle
+
+# Ignore Gradle build output directory
+drivers/jdbc/**/build
+
+# flyctl launch added from drivers/nodejs/.gitignore
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+drivers/nodejs/node_modules
+drivers/nodejs/yarn.lock
+drivers/nodejs/package-lock.json
+drivers/nodejs/**/src/antlr4/*.tokens
+drivers/nodejs/**/src/antlr4/*.interp
+
+# it will be create on "prepare" step.
+drivers/nodejs/dist
+
+# flyctl launch added from regress/.gitignore
+regress/instance
+regress/log
+regress/results
+regress/**/regression.*
+
+# flyctl launch added from src/backend/parser/.gitignore
+src/backend/parser/**/ag_scanner.c
+src/backend/parser/**/cypher_gram.c
+
+# flyctl launch added from src/include/parser/.gitignore
+src/include/parser/**/cypher_gram_def.h
